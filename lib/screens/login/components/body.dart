@@ -93,7 +93,7 @@ class _BodyState extends State<Body> {
                   ),
                   VerticalSpacing(),
                   Text(
-                    "Good Morning",
+                    isDayMood?"Good Morning":"Good Night",
                     style: Theme.of(context).textTheme.headline3.copyWith(
                         fontWeight: FontWeight.bold, color: Colors.white),
                   ),
@@ -104,12 +104,10 @@ class _BodyState extends State<Body> {
                   ),
                   VerticalSpacing(of: 50),
                   RoundedTextField(
-                    initialValue: "ourdemo@email.com",
                     hintText: "Email",
                   ),
                   VerticalSpacing(),
                   RoundedTextField(
-                    initialValue: "XXXXXXX",
                     hintText: "Password",
                   ),
                 ],
